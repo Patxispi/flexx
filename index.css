@@ -1,0 +1,22 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #73dab2;
+}
+
+.flex {
+    margin: 10px;
+}
+
+.flex_flexOne {
+    display: flex;
+}
+
+.flex_flexOne > .square {
+    margin: 5px;
+    justify-content: space-evenly;
+}
+
+.flex_flexTwo {
+    display: flex;
+}

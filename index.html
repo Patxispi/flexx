@@ -3,128 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/749a1662a9.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            margin: 0px;
-        }
-
-        .navbar {
-            background: #415068;
-        }
-
-        .navbar div {
-            display: none;
-        }
-
-        .navbar .toggle,
-        .navbar .brand {
-            display: inline-block;
-        }
-
-        .navbar .link {
-            display: block;
-            text-align: center;
-            padding: 1em;
-            text-decoration: none;
-            background: #223047;
-            color: white;
-        }
-
-        .navbar .link:hover,
-        .navbar .link:active {
-            background: #223047;
-            background: white;
-        }
-
-        .navbar .brand {
-            width: 10em;
-            text-align: center;
-            padding: 1em;
-            color: white;
-        }
-
-        .navbar a {
-            text-decoration: none;
-        }
-
-        .navbar .toggle {
-            padding: 1em;
-            color: black;
-        }
-
-
-        @media (min-width: 48em) {
-            .navbar {
-                display:flex;
-            }
-
-            .navbar div{
-                display: flex;
-            }
-
-            .navbar .left,
-            .navbar .right {
-                display: flex;
-                flex: 1;
-            }
-
-            .navbar .link {
-                width: auto;
-            }
-
-            .navbar .right {
-                justify-content: flex-end;
-            }
-
-            .navbar .toggle {
-                display: none;
-            }
-        }
-
-        @media (max-width: 48em) {
-            .navbar.active .toggle {
-                background: #223047;
-                color: white;
-            }
-
-            .navbar .brand {
-                text-align: left;
-            }
-
-            .navbar.active div {
-                display: block;
-            }
-        }
-
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexbox assignment</title>
+    <link rel="stylesheet" href="./index.css" />
 </head>
 <body>
-    <div class="navbar">
-        
-        <a href="#" class="toggle" id="navHamburger">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <a href="#" class="brand">MyName</a>
+    <div class="flex_flexOne">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
 
-        <div class="left">
-            <a href="#" class="link">Link 1</a>
-            <a href="#" class="link">Link 2</a>
+   <div class="flex_flexTwo">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+<!--
+    <div class="flex_flexThree">
+        <div class="square">1</div>
+        <div class="square">2</div>
+        <div class="square">3</div>
+    </div>
+
+    <div class="flex_flexFour">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="flex_flexFive">
+        <div class="item"></div>
+        <div class="item" id="grow"></div>
+        <div class="item"></div>
+    </div>
+
+    <div class="flex_flexSix">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
         </div>
-
-        <div class="right">
-            <a href="#" class="link">Link 3</a>
-            
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
         </div>
     </div>
+
+    <div class="flex_flexSeven">
+        <div class="one">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+        <div class="four">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="flex_flexEight">
+        <div class="one">
+            <div class="square"></div>
+        </div>
+        <div class="two">
+            <div class="square"></div>
+        </div>
+        <div class="three">
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <div class="flex_flexNine">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square" id="special"></div>
+        <div class="square"></div>
+    </div>
+
+    -->
+
 </body>
-
-<script>
-    const navHamburger = document.querySelector ('#navHamburger');
-
-    navHamburger.addEventListener('click', (e) => {
-        navHamburger.parentElement.classList.toggle('active');
-    })
-</script>
 </html>
